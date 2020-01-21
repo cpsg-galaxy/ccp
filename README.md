@@ -20,16 +20,21 @@ In order to create a tenant cluster in CPSG-Galaxy for development/testing, plea
 
 ## Example JSON
 
-       {
-        "username": "username",
-        "clusters": [
-          {
-            "cluster_name": "username_cluster-1",
-            "cluster_type": "vmware",
-            "k8s_version": "1.14.8",
-            "nodes": "3",
-            "vcpu": "2",
-            "memory": "16384",
-            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG94bb+s1tKhuSM7gko6HkmbrpHcFiXwwhAJHM59SSgj ccpuser-key"
+{
+    "clusterfile": [
+        {
+            "username": "username",
+            "clusters": [
+                {
+                    "cluster_name": "username_cluster-1",
+                    "cluster_type": "vmware",
+                    "k8s_version": "1.14.8",
+                    "nodes": "3",
+                    "vcpu": "2",
+                    "memory": "16384",
+                    "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG94bb+s1tKhuSM7gko6HkmbrpHcFiXwwhAJHM59SSgj ccpuser-key"
+                }
+            ]
         }
-
+    ]
+}
